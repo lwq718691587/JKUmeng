@@ -15,6 +15,8 @@
 
 +(void)load{
     
+    NSCAssert(![UmengAppKey isEqualToString:@"XXXXXXXXXXXXXXXXXXXXXX"], @"请设置友盟统计的key");
+    
     UMConfigInstance.appKey = UmengAppKey;
     [MobClick startWithConfigure:UMConfigInstance];
     [MobClick setAppVersion:kSoftwareVersion_2017_5_19];
