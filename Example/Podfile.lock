@@ -1,0 +1,22 @@
+PODS:
+  - Aspects (1.4.1)
+  - JKUmeng (0.1.0):
+    - Aspects
+    - UMengAnalytics
+  - UMengAnalytics (4.2.4)
+
+DEPENDENCIES:
+  - JKUmeng (from `../JKUmeng.podspec`)
+
+EXTERNAL SOURCES:
+  JKUmeng:
+    :path: ../JKUmeng.podspec
+
+SPEC CHECKSUMS:
+  Aspects: 7595ba96a6727a58ebcbfc954497fc5d2fdde546
+  JKUmeng: 8045616ef5a5f8de699536604fcdd6d04fa6c7a6
+  UMengAnalytics: ef8d45f94c0e5771dc364cf6a5731d9d3b101da2
+
+PODFILE CHECKSUM: 0e3fbadf2630881d6bbd4edced0856ae001b8995
+
+COCOAPODS: 1.2.0

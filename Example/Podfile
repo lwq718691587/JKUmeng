@@ -1,0 +1,11 @@
+
+
+target 'JKUmeng_Example' do
+  pod 'JKUmeng', :path => '../JKUmeng.podspec'
+
+  target 'JKUmeng_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
