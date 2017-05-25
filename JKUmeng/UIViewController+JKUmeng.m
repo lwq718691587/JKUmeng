@@ -15,9 +15,13 @@
 
 +(void)load{
     
-    NSCAssert(![UmengAppKey isEqualToString:@"XXXXXXXXXXXXXXXXXXXXXX"], @"请设置友盟统计的key");
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"JKStatisticsInfo" ofType:@"plist"];
+    NSDictionary *infoDic = [NSDictionary dictionaryWithContentsOfFile:path];
+    NSString *umengAppKey = infoDic[@"UmengAppKey"];
     
-    UMConfigInstance.appKey = UmengAppKey;
+    NSCAssert(umengAppKey.length != 0, @"请在 JKStatisticsInfo.plist 文件中添加 友盟的AppKey如果没有这个文件请创建，key=UmengAppKey value = 你的app的友盟key");
+    
+    UMConfigInstance.appKey = umengAppKey;
     [MobClick startWithConfigure:UMConfigInstance];
     [MobClick setAppVersion:kSoftwareVersion_2017_5_19];
     

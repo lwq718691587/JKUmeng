@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'JKUmeng'
-  s.version          = '0.2.0'
+  s.version          = '0.2.1'
   s.summary          = '友盟统计库，将统计初始化放到load方法里'
 
   s.homepage         = 'https://github.com/lwq718691587/JKUmeng'
@@ -21,6 +21,6 @@ Pod::Spec.new do |s|
 
   s.source_files = 'JKUmeng/**/*'
   s.dependency 'Aspects'
-  s.dependency 'UMengAnalytics'
+  s.dependency 'UMengAnalytics','4.2.4'
 
 end

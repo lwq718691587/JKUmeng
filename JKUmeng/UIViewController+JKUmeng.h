@@ -9,8 +9,6 @@
 
 #import <UIKit/UIKit.h>
 
-//UmnegKey 在这里设置友盟统计的key
-#define UmengAppKey                     @"XXXXXXXXXXXXXXXXXXXXXX"
 
 /** 获取APP的版本号 */
 #define kSoftwareVersion_2017_5_19     ([[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleShortVersionString"])
