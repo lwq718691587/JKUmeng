@@ -18,6 +18,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    NSLog(@"对友盟进行了改动～～～～～～～");
 }
 
 - (void)didReceiveMemoryWarning
